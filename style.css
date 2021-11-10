@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background-color: #1f2937;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  margin: 20px 15%;
+  height: 10%;
+  display: flex;
+}
+
+#header-logo {
+  display: flex;
+  color: #f9faf8;
+  font-size: 24px;
+  flex: 1;
+  align-items: center;
+}
+
+#header-nav-items {
+  display: flex;
+  justify-content: space-between;
+  flex: 0.75;
+  align-items: center;
+}
+
+.nav-item {
+  color: #e5e7eb;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* header main section */
+
+#header-main {
+  display: flex;
+  margin: 5% 15%;
+}
+
+#header-main-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box;
+  margin: 0 20px 0 0;
+}
+
+.main-text {
+  color: #f9faf8;
+  font-size: 48px;
+  flex: 1;
+}
+
+.main-subtext {
+  color: #e5e7eb;
+  font-size: 20px;
+  flex: 1;
+}
+
+#header-main-image {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.button {
+  background-color: #3882f6;
+  border: none;
+  color: #f9faf8;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 10px 25px;
+}
+
+.information-heading {
+  color: rgba(8, 8, 8, 0.9);
+  text-align: center;
+  font-size: 42px;
+  margin-top: 50px;
+}
+
+.information-area {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 15%;
+  padding: 0 50px;
+}
+
+.infomation-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* flex-wrap: wrap; */
+  width: min-content;
+}
+
+.information-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.information-img {
+  /* flex: 1; */
+  height: 150px;
+  width: 150px;
+  border-color: #3882f6;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 15%;
+}
+
+.information-text {
+  width: 150px;
+  color: rgba(6, 6, 6, 0.5);
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#quote {
+  background-color: rgba(6, 6, 6, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 0;
+  padding: 0 15%;
+}
+
+.quote-text {
+  color: rgba(6, 6, 6, 0.6);
+  font-size: 36px;
+  padding: 50px 0 10px 0;
+}
+
+.quote-author {
+  color: rgba(6, 6, 6, 0.8);
+  font-size: 28px;
+  text-align: right;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+
+#call-to-action {
+  margin: 50px 0;
+}
+
+.action-area {
+  margin: 0 15%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #3882f6;
+  background-color: #3882f6;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.action-text {
+  flex: 1;
+  align-items: center;
+}
+
+.action-main {
+  color: #f9faf8;
+  font-size: 28px;
+}
+
+.action-subtext {
+  color: rgba(230, 227, 227, 0.904);
+  font-size: 20px;
+}
+
+.action-button {
+  border-color: #f9faf8;
+  border-width: 3px;
+  border-style: solid;
+}
+
+footer {
+  background-color: #1f2937;
+}
+
+.footer-text {
+  color: #f9faf8;
+  text-align: center;
+  padding: 50px 0;
+}
